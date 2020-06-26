@@ -122,6 +122,7 @@ describe('Band Component with Redux', () => {
     form.simulate('submit',  { preventDefault() {} });
 
     expect(store.getState().bands.length).to.equal(2)
+    // console.log(store.getState())
     expect(store.getState().bands[0].name).to.equal('Shannon and the Clams')
     expect(store.getState().bands[1].name).to.equal('Brian Eno')
 
